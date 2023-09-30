@@ -10,7 +10,8 @@ import { RouterLink, RouterView } from 'vue-router'
             <img src="@/assets/images/logo.png" id="logo-image">
         </div>
         <div class="section2"> 
-          NEW BEGINNING LOOKS IN MANILA\nWomen Clothing
+          Our first collection has arrived
+          women clothing
         </div>
       </div>
     </body>
@@ -25,11 +26,12 @@ body, html {
   margin: 0;
   width: 100%;
   min-height: 100%;
+  font-family: 'JosefinSans-Regular';
+
 }
 
 body {
   background: #F5EEDC;
-  background-image: url('./assets/images/logo-padding.png');
 }
 
 .section1 {
@@ -48,6 +50,9 @@ body {
   margin: 0px;
   padding: 0px;
   float: left;
+  padding-top: 300px;
+  text-align: center;
+  font-size: 25px;
 }
 
 #logo-image {
