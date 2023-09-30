@@ -10,7 +10,7 @@ import { RouterLink, RouterView } from 'vue-router'
             <img src="@/assets/images/logo.png" id="logo-image">
         </div>
         <div class="section2"> 
-          TEN OUT OF TEN
+          NEW BEGINNING LOOKS IN MANILA\nWomen Clothing
         </div>
       </div>
     </body>
