@@ -11,11 +11,11 @@ import { RouterLink, RouterView } from 'vue-router'
         </div>
         <div class="section2"> 
           FIRST CHAPTER<br>
-          Our first collection has arrived
+          our first collection has arrived
           
         </div>
         <div class="section3"> 
-          <div class="section3-box">
+          <div id="section3-box1">
           </div>
           <div>
           </div>
@@ -23,7 +23,8 @@ import { RouterLink, RouterView } from 'vue-router'
           </div>
         </div>
         <div class="section4"> 
-          exceptional quality in terms of the stylish modern trendy design mixing with vintage timeless colors resulting to effortless sophistication
+          OUR BRAND<br>
+          exceptional quality on stylish modern trendy design mixing with vintage timeless resulting to effortless sophistication
         </div>      
       </div>
     </body>
@@ -47,7 +48,7 @@ body {
 }
 
 .section1 {
-  background: #FFFFFF;
+  background: #f4f3ef;
   height: 180px;
   width: 80vw;
   margin: 0px;
@@ -74,14 +75,14 @@ body {
   float: left;
   padding-top: 300px;
   text-align: center;
-  font-size: 25px;
+  font-size: 18px;
   color: white;
   background-image: url("@/assets/images/paris.png")
 }
 
 .section3 {
   background: #FFFFFF;
-  height: 400px;
+  height: 600px;
   width: 80vw;
   margin: 0px;
   padding: 0px;
@@ -92,16 +93,16 @@ body {
   
 }
 
-.section3-box {
+#section3-box1 {
   background: #FFFFFF;
   height: 400px;
-  width: 80vw;
+  width: 33%;
   margin: 0px;
   padding: 0px;
   float: left;
-  padding-top: 300px;
   text-align: center;
-  font-size: 25px;
+  background: url("@/assets/images/products/1/105.png") no-repeat 50% 50%;
+  background-size: contain; 
 }
 
 .section4 { 
@@ -113,7 +114,8 @@ body {
   float: left;
   padding-top: 300px;
   text-align: center;
-  font-size: 25px;
+  font-size: 18px;
+  margin-horizontal:25px;
 }
 
 </style>
