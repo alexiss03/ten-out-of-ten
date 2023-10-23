@@ -1,9 +1,11 @@
 <script setup lang="ts">
 import FooterView from './FooterView.vue';
+import HeaderView from './HeaderView.vue';
 </script>
 
 <template>
   <body>
+    <HeaderView/>
     <div class="section1">
       <div id="section1-header">About Us</div>
       <div id="section1-body">Ten out of ten is founded in 2023 by sisters Lexi and Gel. Their primary goal is to provide stylish clothing for the Filipinos made locally. </div>

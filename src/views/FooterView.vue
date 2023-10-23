@@ -3,15 +3,23 @@ import { useRouter } from 'vue-router';
 const myRouter: any = useRouter();
 
 const clickAboutUs = () => {
-  myRouter.push('/aboutus');
+  myRouter.push('/about-us');
+};
+
+const clickSizeGuide = () => {
+  myRouter.push('/size-guide');
+};
+
+const clickFAQsView = () => {
+  myRouter.push('/faqs');
 };
 </script>
 
 <template>
     <div class="footer"> 
         <div class="footer-items" @click="clickAboutUs">ABOUT US </div>
-        <div class="footer-items">SIZE GUIDE </div>
-        <div class="footer-items">FAQs </div>
+        <div class="footer-items" @click="clickSizeGuide">SIZE GUIDE </div>
+        <div class="footer-items" @click="clickFAQsView">FAQs </div>
         <div class="footer-items">SHIPPING </div>
         <div class="footer-items">RETURNS AND EXCHANGES </div>
         <div class="footer-items">CONTACT US </div>

@@ -1,21 +1,14 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router';
-import { useRouter } from 'vue-router';
 import FooterView from './FooterView.vue';
+import HeaderView from './HeaderView.vue';
 
-const myRouter: any = useRouter();
-
-const clickAboutUs = () => {
-  myRouter.push('/aboutus');
-};
 </script>
 
 <template>
  <html>
     <body>
-       <div id="header"> 
-            <div>WOMEN'S CLOTHING<br></div>
-        </div>
+        <HeaderView/>
        <div class="section1"> 
             <img src="@/assets/images/logo.png" id="logo-image">
         </div> 
