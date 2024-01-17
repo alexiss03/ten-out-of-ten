@@ -17,6 +17,10 @@ const clickFAQsView = () => {
 const clickShipping = () => {
   myRouter.push('/shipping');
 };
+
+const clickReturnsAndExchanges = () => {
+  myRouter.push('/shipping');
+};
 </script>
 
 <template>
@@ -25,7 +29,7 @@ const clickShipping = () => {
         <div class="footer-items" @click="clickSizeGuide">SIZE GUIDE </div>
         <div class="footer-items" @click="clickFAQsView">FAQs </div>
         <div class="footer-items" @click="clickShipping">SHIPPING </div>
-        <div class="footer-items">RETURNS AND EXCHANGES </div>
+        <div class="footer-items" @click="clickReturnsAndExchanges">RETURNS AND EXCHANGES </div>
         <div class="footer-items">CONTACT US </div>
     </div>  
 </template>

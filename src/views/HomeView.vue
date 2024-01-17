@@ -1,14 +1,21 @@
 <script setup lang="ts">
-import { RouterLink, RouterView } from 'vue-router';
 import FooterView from './FooterView.vue';
 import HeaderView from './HeaderView.vue';
 
+import { useRouter } from 'vue-router';
+const myRouter: any = useRouter();
+
+const seeFullCollection = () => {
+  myRouter.push('/collection1');
+};
+
 </script>
+
 
 <template>
  <html>
     <body>
-        <HeaderView/>
+       <HeaderView/>
        <div class="section1"> 
             <img src="@/assets/images/logo.png" id="logo-image">
         </div> 
@@ -17,10 +24,12 @@ import HeaderView from './HeaderView.vue';
           <div>our first collection has arrived</div> 
         </div>
         <div class="section3"> 
-          <div>
-          </div>
-          <div>
-          </div>
+            <div>
+            <img src="@/assets/images/products/1/106.jpg" class="section3-box-img">
+            <img src="@/assets/images/products/1/105.png" class="section3-box-img">
+            <img src="@/assets/images/products/1/105.png" class="section3-box-img">
+            </div>
+            <div class="section3" @click="seeFullCollection">See the full collection</div>
         </div>
         <div class="section4"> 
           <div class="section-title">OUR BRAND</div>
@@ -68,12 +77,12 @@ body, html {
 
 #logo-image {
   margin: auto;
-  width: 30%;
+  width: 20%;
 }
 
 .section2 {
   background: #65451F;
-  height: 400px;
+  height: 500px;
   width: 100vw;
   margin: 0px;
   padding: 0px;
@@ -86,16 +95,40 @@ body, html {
 
 .section3 {
   background: #FFFFFF;
-  height: 600px;
+  height: 700px;
   width: 100vw;
-  margin: 0px;
-  padding: 0px;
-  padding-top: 300px;
   text-align: center;
   font-size: 25px;
+  display: block;
+  justify-content: space-between; /* Distribute space evenly between the images */
+  align-items: center;
+  color: black;
 }
 
-#section3-box1 {
+.section3-box {
+  width: 33vw;
+  height: 100%;
+  display: inline;
+}
+
+.section3-box-img {
+  max-height: 100%;
+  width: 33%;
+}
+
+#section3-box2 {
+  background: #FFFFFF;
+  height: 400px;
+  width: 33%;
+  margin: 0px;
+  padding: 0px;
+  float: left;
+  text-align: center;
+  background: url("@/assets/images/products/1/105.png") no-repeat 50% 50%;
+  background-size: contain; 
+}
+
+#section3-box3 {
   background: #FFFFFF;
   height: 400px;
   width: 33%;

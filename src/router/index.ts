@@ -4,6 +4,8 @@ import AboutView from '../views/AboutView.vue'
 import SizeGuideView from '../views/SizeGuideView.vue'
 import FAQsView from '../views/FAQsView.vue'
 import ShippingView from '../views/ShippingView.vue'
+import Routes from '../views/ShippingView.vue'
+import Collection1View from '../views/Collection1View.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -32,6 +34,11 @@ const router = createRouter({
       path: '/shipping',
       name: 'shipping',
       component: ShippingView
+    },
+    {
+      path: '/collection1',
+      name: 'collection1',
+      component: Collection1View
     },
   ]
 })
