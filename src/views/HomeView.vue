@@ -25,9 +25,9 @@ const seeFullCollection = () => {
         </div>
         <div class="section3"> 
             <div>
-            <img src="@/assets/images/products/1/106.jpg" class="section3-box-img">
-            <img src="@/assets/images/products/1/105.png" class="section3-box-img">
-            <img src="@/assets/images/products/1/105.png" class="section3-box-img">
+            <img src="@/assets/images/products/1/1.png" class="section3-box-img">
+            <img src="@/assets/images/products/1/2.png" class="section3-box-img">
+            <img src="@/assets/images/products/1/3.png" class="section3-box-img">
             </div>
             <div class="section3" @click="seeFullCollection">See the full collection</div>
         </div>
@@ -73,11 +73,18 @@ body, html {
   vertical-align: middle;
   display: flex;
   flex-direction: column;
+
+  display: flex;
+  justify-content: center; /* Center the image horizontally */
+  align-items: center; /* Center the image vertically */
+  height: 100px; /* Container height */
 }
 
 #logo-image {
-  margin: auto;
-  width: 20%;
+  padding-top: 70px;
+  height: 200px; /* Fixed height for the image */
+  width: 30%; /* Image width is 50% of its container */
+  object-fit: cover;
 }
 
 .section2 {
