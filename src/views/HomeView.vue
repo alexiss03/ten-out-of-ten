@@ -29,7 +29,7 @@ const seeFullCollection = () => {
             <img src="@/assets/images/products/1/2.png" class="section3-box-img">
             <img src="@/assets/images/products/1/3.png" class="section3-box-img">
             </div>
-            <div class="section3" @click="seeFullCollection">See the full collection</div>
+            <div class="section-subtitle" @click="seeFullCollection">See the full collection</div>
         </div>
         <div class="section4"> 
           <div class="section-title">OUR BRAND</div>
@@ -63,6 +63,11 @@ body, html {
   font-family: 'Coves-Bold';
 }
 
+.section-subtitle {
+  font-family: 'Coves';
+  font-size: 20px;
+}
+
 .section1 {
   background: #f4f3ef;
   height: 100px;
@@ -73,6 +78,7 @@ body, html {
   vertical-align: middle;
   display: flex;
   flex-direction: column;
+
 
   display: flex;
   justify-content: center; /* Center the image horizontally */
@@ -88,7 +94,7 @@ body, html {
 }
 
 .section2 {
-  background: #65451F;
+  background: #f0dcbd;
   height: 500px;
   width: 100vw;
   margin: 0px;
@@ -96,13 +102,15 @@ body, html {
   padding-top: 300px;
   text-align: center;
   font-size: 18px;
-  color: white;
-  background-image: url("@/assets/images/paris.png")
+  color: black;
+  background-image: url("@/assets/images/header.png");
+  background-position: left center; /* Align the image to the left, center vertically */
+  background-repeat: no-repeat; /* Prevent the background image from repeating */
+  background-size: auto 100%;
 }
 
 .section3 {
   background: #FFFFFF;
-  height: 700px;
   width: 100vw;
   text-align: center;
   font-size: 25px;
@@ -110,6 +118,7 @@ body, html {
   justify-content: space-between; /* Distribute space evenly between the images */
   align-items: center;
   color: black;
+  padding-top:10px;
 }
 
 .section3-box {
@@ -120,7 +129,7 @@ body, html {
 
 .section3-box-img {
   max-height: 100%;
-  width: 33%;
+  width: 33.33vw
 }
 
 #section3-box2 {
