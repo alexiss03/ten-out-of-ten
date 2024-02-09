@@ -132,30 +132,6 @@ body, html {
   width: 33.33vw
 }
 
-#section3-box2 {
-  background: #FFFFFF;
-  height: 400px;
-  width: 33%;
-  margin: 0px;
-  padding: 0px;
-  float: left;
-  text-align: center;
-  background: url("@/assets/images/products/1/105.png") no-repeat 50% 50%;
-  background-size: contain; 
-}
-
-#section3-box3 {
-  background: #FFFFFF;
-  height: 400px;
-  width: 33%;
-  margin: 0px;
-  padding: 0px;
-  float: left;
-  text-align: center;
-  background: url("@/assets/images/products/1/105.png") no-repeat 50% 50%;
-  background-size: contain; 
-}
-
 .section4 { 
   background: #65451F;
   height: 400px;
