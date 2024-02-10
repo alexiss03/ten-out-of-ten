@@ -12,7 +12,7 @@ import FooterView from './FooterView.vue';
       <table>
         <tr>
           <td>Size</td>
-          <td>UK</td>
+          <td>Asian</td>
           <td colspan="2">Bust</td>
           <td colspan="2">Waist</td>
         </tr>
@@ -29,32 +29,32 @@ import FooterView from './FooterView.vue';
           <td></td>
           <td></td>
           <td></td>
-          <td></td>
-          <td></td>
+          <td>27</td>
+          <td>68.58</td>
         </tr>
         <tr>
           <td>M</td>
           <td></td>
           <td></td>
           <td></td>
-          <td></td>
-          <td></td>
+          <td>29</td>
+          <td>73.66</td>
         </tr>
         <tr>
           <td>L</td>
           <td></td>
           <td></td>
           <td></td>
-          <td></td>
-          <td></td>
+          <td>31</td>
+          <td>78.74</td>
         </tr>
         <tr>
           <td>XL</td>
           <td></td>
           <td></td>
           <td></td>
-          <td></td>
-          <td></td>
+          <td>33</td>
+          <td>83.82</td>
         </tr>
       </table>
       <br>
@@ -79,32 +79,32 @@ import FooterView from './FooterView.vue';
           <td></td>
           <td></td>
           <td></td>
-          <td></td>
-          <td></td>
+          <td>27</td>
+          <td>68.58</td>
         </tr>
         <tr>
           <td>M</td>
           <td></td>
           <td></td>
           <td></td>
-          <td></td>
-          <td></td>
+          <td>29</td>
+          <td>73.66</td>
         </tr>
         <tr>
           <td>L</td>
           <td></td>
           <td></td>
           <td></td>
-          <td></td>
-          <td></td>
+          <td>31</td>
+          <td>78.74</td>
         </tr>
         <tr>
           <td>XL</td>
           <td></td>
           <td></td>
           <td></td>
-          <td></td>
-          <td></td>
+          <td>33</td>
+          <td>83.82</td>
         </tr>
       </table>
     </div>

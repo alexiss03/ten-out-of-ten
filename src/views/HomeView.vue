@@ -21,19 +21,26 @@ const seeFullCollection = () => {
         </div> 
         <div class="section2"> 
           <div class="section-title">FIRST CHAPTER</div>
-          <div>our first collection has arrived</div> 
+          <div>Welcome to Ten Out of Ten!</div> 
         </div>
+        <div class="shop-now"> 
+            <div class="section-title">SHOP NOW</div>
+        </div> 
         <div class="section3"> 
             <div>
             <img src="@/assets/images/products/1/1.png" class="section3-box-img">
             <img src="@/assets/images/products/1/2.png" class="section3-box-img">
             <img src="@/assets/images/products/1/3.png" class="section3-box-img">
             </div>
-            <div class="section-subtitle" @click="seeFullCollection">See the full collection</div>
         </div>
+        <div class="shop-now"> 
+            <div class="section-title">SEE PHOTO FULL COLLECTION</div>
+        </div> 
         <div class="section4"> 
-          <div class="section-title">OUR BRAND</div>
-          <div>exceptional quality on stylish modern trendy design mixing with vintage timeless resulting to effortless sophistication</div>
+          <div class="section4-content">
+            <div class="section-title">OUR BRAND</div>
+            <div>exceptional quality on stylish modern trendy design mixing with vintage timeless resulting to effortless sophistication</div>
+          </div>
         </div>  
         <FooterView/>
         
@@ -65,7 +72,7 @@ body, html {
 
 .section-subtitle {
   font-family: 'Coves';
-  font-size: 20px;
+  font-size: 15px;
 }
 
 .section1 {
@@ -79,18 +86,53 @@ body, html {
   display: flex;
   flex-direction: column;
 
-
   display: flex;
   justify-content: center; /* Center the image horizontally */
   align-items: center; /* Center the image vertically */
   height: 100px; /* Container height */
 }
 
+.section1 img{
+  height: 100vw;
+}
+
+.shop-now {
+  background: #f4f3ef;
+  color:black;
+  height: 50px;
+  width: 100vw;
+  margin-top: 10px;
+  padding: 0px;
+
+  vertical-align: middle;
+  display: flex;
+  flex-direction: column;
+
+
+  display: flex;
+  justify-content: center; /* Center the image horizontally */
+  align-items: center; /* Center the image vertically */
+  height: 50px; /* Container height */
+
+  margin-bottom: 10px;
+}
+
 #logo-image {
-  padding-top: 70px;
-  height: 200px; /* Fixed height for the image */
-  width: 30%; /* Image width is 50% of its container */
+  height: auto; /* Fixed height for the image */
+  width: auto; /* Image width is 50% of its container */
   object-fit: cover;
+  margin-top:50px;
+}
+
+/* Mobile styles */
+@media (max-width: 1000px) {
+  #logo-image {
+    vertical-align: middle;
+    margin-bottom: 0.25em;
+    height: auto; /* Fixed height for the image */
+    width: 50%; /* Image width is 50% of its container */
+    padding-top:50px;
+  }
 }
 
 .section2 {
@@ -109,6 +151,25 @@ body, html {
   background-size: auto 100%;
 }
 
+/* Mobile styles */
+@media (max-width: 1000px) {
+  .section2 {
+    background: #f0dcbd;
+    height: 500px;
+    width: 100vw;
+    margin: 0px;
+    padding: 0px;
+    padding-top: 300px;
+    text-align: center;
+    font-size: 18px;
+    color: white;
+    background-image: url("@/assets/images/header.png");
+    background-position: left center; /* Align the image to the left, center vertically */
+    background-repeat: no-repeat; /* Prevent the background image from repeating */
+    background-size: auto 100%;
+  }
+}
+
 .section3 {
   background: #FFFFFF;
   width: 100vw;
@@ -118,7 +179,6 @@ body, html {
   justify-content: space-between; /* Distribute space evenly between the images */
   align-items: center;
   color: black;
-  padding-top:10px;
 }
 
 .section3-box {
@@ -133,12 +193,20 @@ body, html {
 }
 
 .section4 { 
-  background: #65451F;
+  background: #f0dcbd;
   height: 400px;
   width: 100vw;
-  text-align: center;
+  text-align: left;
   font-size: 18px;
-  padding-top:300px;
-  color: #FFFFFF;
+  padding-top:150px;
+  color: black;
+  background-image: url("@/assets/images/products.png");
+  background-position: left center; /* Align the image to the left, center vertically */
+  background-repeat: no-repeat; /* Prevent the background image from repeating */
+  background-size: 40vw auto;
+}
+
+.section4-content {
+  margin-left: 40vw;
 }
 </style>
